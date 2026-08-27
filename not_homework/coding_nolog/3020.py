@@ -10,13 +10,6 @@ if not countofcoke:
 elif not far_bottle:
     print(countofcoke * price)
 else:
-    # totalprice = price
-    # totalproprice = (countofcoke // far_bottle) * pro_price
-    # nonproprice = (countofcoke - (countofcoke // far_bottle)) * price
-    # totalprice = totalproprice + nonproprice
-    # pricepro = far_bottle * pro_price
-    # countofcoke -= far_bottle
-
     totalprice = price
     remaining_coke = countofcoke - 1 #หักขขวดแรกไป
 
@@ -33,7 +26,4 @@ else:
     # 1 2 3 1 2 3 1 2 3  1    2    3    1    2    3
     # X   1     2        3              4
     totalprice += full_price_bottles * price
-
-    # print(totalprice)
-
     print(totalprice)
